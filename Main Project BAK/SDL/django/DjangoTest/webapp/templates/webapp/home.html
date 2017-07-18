@@ -1,0 +1,19 @@
+{% extends "webapp/header.html" %}
+
+{% block content %}
+   <h1>Welcome to Bangla OCR</h1>
+
+    <!-- {% include "webapp/includes/htmlsnippet.html" %} -->
+
+
+    <input type="file", id="image"> <br><br>
+    <button onclick="Upload()">Upload</button>
+
+    <script>
+    function Upload() {
+        fileName = document.getElementById("image").value;
+        console.log(fileName);
+    }
+    </script>
+{% endblock %}
+
